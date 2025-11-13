@@ -1,7 +1,7 @@
 import { prompt } from "./prompt.js";
 
 const API_KEY = "AIzaSyC4jhyV7OrQldg3X08Q5c8X_YuETDwmjzY";
-const MODEL = "gemini-2.0-flash";
+const MODEL = "gemini-2.5-flash-lite";
 
 const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
 
@@ -59,7 +59,7 @@ async function generarPregunta() {
                     }],
                     // Opcional: añadir la configuración de generación
                     generationConfig: {
-                        temperature: 0.25,
+                        temperature: 0.2,
                         responseMimeType: "application/json"
                     },
                 }),
