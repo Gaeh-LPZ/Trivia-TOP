@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twenty One Pilots | Trivia</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Trivia de Twenty One Pilots</h1>
+        <div class="container">
+            <div class="correct-answers">
+                <img src="./assets/icons/check.svg" alt="Check symbol">
+                <p>Correctas: </p>
+                <strong id="correct-answers-counter">0</strong>
+            </div>
+            <aside class="incorrect-answers">
+                <img src="./assets/icons/x.svg" alt="Incorrect symbol">
+                <p>Incorrectas: </p>
+                <strong id="incorrect-answers-counter">0</strong>
+            </aside>
+        </div>
+    </header>
+    <main>
+        <h2 id="pregunta">Cargando pregunta ...</h2>
+        <section id="opciones"></section>
+    </main>
+    <footer>
+        <p id="explicacion"></p>
+        <button type="button" id="next-question">Siguiente Pregunta</button>
+    </footer>
+
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
